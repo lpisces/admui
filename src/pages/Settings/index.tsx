@@ -13,7 +13,6 @@ import {
   Avatar,
   Switch,
   Divider,
-  Select,
   List,
   Tag,
   Space,
@@ -27,18 +26,14 @@ import {
   UploadOutlined,
   BellOutlined,
   SafetyOutlined,
-  ClockCircleOutlined,
   DeleteOutlined,
   CheckCircleOutlined,
-  PlusOutlined,
 } from '@ant-design/icons';
-import type { RcFile, UploadFile, UploadProps } from 'antd/es/upload/interface';
+import type { RcFile, UploadProps } from 'antd/es/upload/interface';
 import type { TabsProps } from 'antd';
 import './index.less';
 
 const { Title, Paragraph } = Typography;
-const { TabPane } = Tabs;
-const { Option } = Select;
 
 // 模拟登录设备数据
 const mockDevices = [

@@ -61,7 +61,7 @@ const mockUsers: UserData[] = Array.from({ length: 50 }, (_, i) => ({
 
 const User: React.FC = () => {
   const [users, setUsers] = useState<UserData[]>(mockUsers);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading] = useState<boolean>(false);
   const [searchText, setSearchText] = useState<string>('');
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const [modalTitle, setModalTitle] = useState<string>('');

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Tree, Button, Input, Row, Col, Form, Modal, Typography, message, Popconfirm } from 'antd';
 import { PlusOutlined, EditOutlined, DeleteOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
-import type { DataNode, TreeProps } from 'antd/es/tree';
+import type { DataNode } from 'antd/es/tree';
 import './index.less';
 
 const { Title } = Typography;

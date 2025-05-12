@@ -9,8 +9,6 @@ import {
   Modal, 
   Input, 
   Form,
-  Select,
-  Divider,
   Card,
   Row,
   Col,
@@ -22,7 +20,6 @@ import {
   UploadOutlined, 
   DownloadOutlined, 
   DeleteOutlined, 
-  SearchOutlined,
   FolderAddOutlined,
   FileTextOutlined,
   FolderOutlined,
@@ -39,7 +36,6 @@ import type { UploadFile, UploadProps } from 'antd/es/upload/interface';
 import './index.less';
 
 const { Title } = Typography;
-const { Option } = Select;
 const { Search } = Input;
 
 // 文件数据接口
