@@ -1,20 +1,20 @@
 import { Navigate } from 'react-router-dom';
 import type { RouteObject } from 'react-router-dom';
-import MainLayout from './layouts/MainLayout';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import ForgotPassword from './pages/ForgotPassword';
-import Welcome from './pages/Welcome';
-import Organization from './pages/Organization';
-import User from './pages/User';
-import Permission from './pages/Permission';
-import File from './pages/File';
-import Settings from './pages/Settings';
+import MainLayout from './layouts/MainLayout.tsx';
+import Login from './pages/Login/index';
+import Register from './pages/Register/index';
+import ForgotPassword from './pages/ForgotPassword/index';
+import Welcome from './pages/Welcome/index';
+import Organization from './pages/Organization/index';
+import User from './pages/User/index';
+import Permission from './pages/Permission/index';
+import File from './pages/File/index';
+import Settings from './pages/Settings/index';
 
 const routes: RouteObject[] = [
   {
     path: '/',
-    element: <Navigate to="/login" replace />,
+    element: <Navigate to="/login" />,
   },
   {
     path: '/login',
@@ -34,7 +34,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: '',
-        element: <Navigate to="/dashboard/welcome" replace />,
+        element: <Navigate to="/dashboard/welcome" />,
       },
       {
         path: 'welcome',
@@ -64,7 +64,7 @@ const routes: RouteObject[] = [
   },
   {
     path: '*',
-    element: <Navigate to="/login" replace />,
+    element: <Navigate to="/login" />,
   },
 ];
 
